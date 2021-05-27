@@ -80,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: "italic",
     marginBottom: 40,
     color: "#808080",
-    lineHeight: 1.2,
+    lineHeight: 1.4,
   },
   lists: {
     fontSize: "12px",
@@ -117,7 +117,7 @@ function Index(props) {
           Adriel Gama
         </Typography>
         <Typography variant="subtitle" alignCenter className={classes.subtitle}>
-          Dev. Júnior | Front-End
+          Júnior | Front-End
           <br />
           Programador Front-end
         </Typography>
