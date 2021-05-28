@@ -18,7 +18,7 @@ import Skills from "../Components/Skills/Skills";
 import Information from "../Components/Information/Information";
 import Experience from "../Components/Experience/Experience";
 import Education from "../Components/Education/Education";
-import Certifications from "../Components/Certifications/Certifications";
+import AboutMe from "../Components/AboutMe/AboutMe";
 
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(25),
     margin: 10,
     marginBottom: 40,
-    marginTop: 40,
+    marginTop: 0,
   },
   subtitle: {
     textAlign: "center",
@@ -248,15 +248,21 @@ function Index(props) {
       <main className={classes.content}>
         <div className={classes.toolbar} />
         {/* <Navbar /> */}
+
         <Skills />
         <div className={classes.toolbar} />
+
         <Information />
         <div className={classes.toolbar} />
+
         <Experience />
         <div className={classes.toolbar} />
+
         <Education />
         <div className={classes.toolbar} />
-        <Certifications />
+
+        <AboutMe />
+        <div className={classes.toolbar} />
       </main>
     </div>
   );

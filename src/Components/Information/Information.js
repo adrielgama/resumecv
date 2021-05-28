@@ -28,12 +28,6 @@ const useStyles = makeStyles((theme) => ({
   inline: {
     display: "inline",
   },
-  containerInfo: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    flexDirection: "column",
-  },
 }));
 
 const Information = () => {
@@ -43,15 +37,22 @@ const Information = () => {
       <CssBaseline />
       <Typography className="line__tittle">Informações</Typography>
 
-      <Container maxWidth="md" className={classes.containerInfo}>
+      <Container
+        maxWidth="md"
+        className={classes.containerInfo}
+        id="info__container"
+      >
         {/* <  */}
         <List className={classes.root}>
+          {/* ITEM 1  */}
+
           <ListItem alignItems="center">
             <ListItemAvatar>
-              <LoopIcon />
+              <LoopIcon style={{ color: "#455075" }} />
             </ListItemAvatar>
             <ListItemText
-              primary="Status de busca "
+              style={{ color: "#ababab" }}
+              primary="Status de busca"
               secondary={
                 <React.Fragment>
                   <Typography
@@ -60,19 +61,22 @@ const Information = () => {
                     className={classes.inline}
                     color="textPrimary"
                   >
-                    Em busca de novas oportunidades!
+                    Aberto a propostas!
                   </Typography>
                 </React.Fragment>
               }
             />
           </ListItem>
+
           <Divider variant="inset" component="li" />
+          {/* ITEM 2  */}
           <ListItem alignItems="center">
             <ListItemAvatar>
-              <AttachMoneyIcon />
+              <AttachMoneyIcon style={{ color: "#455075" }} />
             </ListItemAvatar>
             <ListItemText
-              primary="Salário mensal mínimo que aceito receber "
+              style={{ color: "#ababab" }}
+              primary="Pretensão salarial"
               secondary={
                 <React.Fragment>
                   <Typography
@@ -92,11 +96,13 @@ const Information = () => {
 
         {/* >  */}
         <List className={classes.root}>
+          {/* ITEM 3  */}
           <ListItem alignItems="center">
             <ListItemAvatar>
-              <BusinessCenterIcon />
+              <BusinessCenterIcon style={{ color: "#455075" }} />
             </ListItemAvatar>
             <ListItemText
+              style={{ color: "#ababab" }}
               primary="Tipo(s) de contrato "
               secondary={
                 <React.Fragment>
@@ -112,12 +118,14 @@ const Information = () => {
               }
             />
           </ListItem>
-          <Divider variant="inset" component="li" />
+
+          {/* ITEM 4  */}
           <ListItem alignItems="center">
             <ListItemAvatar>
-              <GTranslateIcon />
+              <GTranslateIcon style={{ color: "#455075" }} />
             </ListItemAvatar>
             <ListItemText
+              style={{ color: "#ababab" }}
               primary="Nível de Inglês  "
               secondary={
                 <React.Fragment>
@@ -136,13 +144,15 @@ const Information = () => {
         </List>
 
         {/* \/ */}
-        <List className={classes.root}>
-          <Divider variant="inset" component="li" />
+
+        <List className={classes.root} id="bottom__info__container">
+          {/* ITEM 5  */}
           <ListItem alignItems="center">
             <ListItemAvatar>
-              <BusinessIcon />
+              <BusinessIcon style={{ color: "#455075" }} />
             </ListItemAvatar>
             <ListItemText
+              style={{ color: "#ababab" }}
               primary="Tenho interesse em trabalhar em "
               secondary={
                 <React.Fragment>
@@ -158,7 +168,6 @@ const Information = () => {
               }
             />
           </ListItem>
-          <Divider variant="inset" component="li" />
         </List>
       </Container>
     </div>

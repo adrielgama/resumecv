@@ -8,6 +8,7 @@
   list-style: none;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -43,4 +44,60 @@ a {
   margin: 0 30px;
   width: 33%;
   z-index: -1;
+}
+
+#info__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#aboutme {
+  text-indent: 20px;
+  text-align: justify !important;
+}
+
+#aboutme_first::first-letter {
+  initial-letter: 3 !important;
+}
+
+/* SCROLLBAR CUSTOM  */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(13deg, #e3e3e3 14%, #e3e3e3 53%);
+  border-radius: 15px;
+  box-shadow: inset 4px 3px 8px #c2c2c2;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c4c4c4;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: inset 7px 10px 12px #f0f0f0;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  #info__container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #education__container li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #logo__ifba {
+    margin-bottom: 30px;
+  }
 }
