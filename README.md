@@ -1,17 +1,16 @@
-# Currículo online - 2021
+# [New folder project CLICK HERE](https://github.com/adrielgama/adrielgama.github.io)
 
+</br>
+</br>
+</br>
+</br>
+
+## Currículo online - 2021
 
 > Atualização anual do meu currículo online. 
 >
 > Modelo 2021 com design responsivo e utilizando o design mais limpo possível.
-  
-</br>
-</br>
 
-## Site/demo: https://adrielgama.dev/
-
-
-</br>
 </br>
 
 #
